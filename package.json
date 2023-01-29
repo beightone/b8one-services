@@ -1,0 +1,40 @@
+{
+  "name": "@b8one/services",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "description": "Services used in VTEX IO backend projects by b8one.",
+  "scripts": {
+    "lint": "eslint ./src/**/*.ts",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
+    "format-lint": "yarn format && yarn lint",
+    "clean": "rimraf lib/",
+    "build": "yarn clean && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "b8one",
+    "vtex",
+    "vtexio",
+    "node"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.22",
+    "@vtex/api": "6.45.13",
+    "@vtex/prettier-config": "^0.3.1",
+    "@vtex/tsconfig": "^0.6.0",
+    "chalk": "4.1.2",
+    "eslint": "^6.8.0",
+    "eslint-config-vtex": "^12.7.0",
+    "graphql": "^15.0.0",
+    "graphql-tools": "^4.0.6",
+    "prettier": "^2.0.5",
+    "rimraf": "3.0.2",
+    "typescript": "3.9.7"
+  },
+  "resolutions": {
+    "@types/express-serve-static-core": "4.17.20",
+    "@types/express": "4.17.2"
+  }
+}
